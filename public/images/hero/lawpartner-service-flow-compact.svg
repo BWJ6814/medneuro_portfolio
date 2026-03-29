@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 392" width="1200" height="392" role="img" aria-labelledby="heroTitle">
+  <title id="heroTitle">LawPartner service flow</title>
+  <defs>
+    <linearGradient id="bgC" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e8f1fb"/>
+      <stop offset="100%" stop-color="#f4f8fd"/>
+    </linearGradient>
+    <pattern id="patC" width="120" height="120" patternUnits="userSpaceOnUse">
+      <circle cx="20" cy="22" r="1" fill="#0047AB" opacity="0.06"/>
+    </pattern>
+    <marker id="flowArrowC" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#0047AB" opacity="0.45"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="392" fill="url(#bgC)"/>
+  <rect width="1200" height="392" fill="url(#patC)"/>
+
+  <text x="600" y="30" text-anchor="middle" font-family="system-ui, &quot;Malgun Gothic&quot;, sans-serif" font-size="19" font-weight="700" fill="#0047AB">AI &#xae30;&#xbc18; &#xbc95;&#xb960; &#xc0c1;&#xb2f4; &#xd50c;&#xb7ab;&#xd3fc; &#xb85c;&#xc6b0;&#xd30c;&#xd2b8;&#xb108;</text>
+  <text x="600" y="50" text-anchor="middle" font-family="system-ui, &quot;Malgun Gothic&quot;, sans-serif" font-size="10.5" fill="#475569">5&#xb2e8;&#xacc4; &#xbc95;&#xb960; &#xc0c1;&#xb2f4;&#xb7fb; &#xb9e4;&#xce59; &#xd750;&#xb984;</text>
+
+  <g font-family="system-ui, &quot;Malgun Gothic&quot;, sans-serif">
+    <g>
+      <rect x="24" y="62" width="216" height="280" rx="11" fill="#fff" stroke="#0047AB" stroke-opacity="0.2" stroke-width="1.25"/>
+      <rect x="24" y="62" width="216" height="32" rx="11" fill="#0047AB" fill-opacity="0.1"/>
+      <text x="132" y="83" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0f172a">&#x2460; AI &#xc57c;&#xd305; &#xc0c1;&#xb2f4;</text>
+      <text x="132" y="108" text-anchor="middle" font-size="8.8" fill="#334155">&#xc0ac;&#xc6a9;&#xc790;&#xac00; &#xbc95;&#xb960; &#xc0c1;&#xb2f4;&#xb0b4;&#xc6a9; &#xc785;&#xb825;</text>
+      <text x="132" y="122" text-anchor="middle" font-size="8.8" fill="#334155">RAG&#xae30;&#xbc18;(&#xd310;&#xb840;&#xb370;&#xc774;&#xd130;)&#xc73c;&#xb85c; &#xb2f5;&#xbcc0;</text>
+      <circle cx="132" cy="168" r="26" fill="#e0edfb" stroke="#0047AB" stroke-opacity="0.22"/>
+      <text x="132" y="175" text-anchor="middle" font-size="22">&#x1f4ac;</text>
+    </g>
+    <line x1="248" y1="202" x2="256" y2="202" stroke="#0047AB" stroke-width="1.75" opacity="0.4" marker-end="url(#flowArrowC)"/>
+
+    <g>
+      <rect x="264" y="62" width="216" height="280" rx="11" fill="#fff" stroke="#0047AB" stroke-opacity="0.2" stroke-width="1.25"/>
+      <rect x="264" y="62" width="216" height="32" rx="11" fill="#0047AB" fill-opacity="0.1"/>
+      <text x="372" y="83" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0f172a">&#x2461; &#xc0c1;&#xb2f4;&#xac8c;&#xc2dc;&#xae00; &#xc790;&#xb3d9; &#xc791;&#xc131;</text>
+      <text x="372" y="108" text-anchor="middle" font-size="8.8" fill="#334155">AI&#xc0c1;&#xb2f4; &#xb0b4;&#xc6a9;&#xc744; &#xae30;&#xbc18;&#xc73c;&#xb85c;</text>
+      <text x="372" y="122" text-anchor="middle" font-size="8.8" fill="#334155">&#xc0c1;&#xb2f4; &#xc694;&#xccad;&#xae00; &#xb4f1;&#xb85d;</text>
+      <circle cx="372" cy="168" r="26" fill="#e0edfb" stroke="#0047AB" stroke-opacity="0.22"/>
+      <text x="372" y="175" text-anchor="middle" font-size="22">&#x1f4dd;</text>
+    </g>
+    <line x1="488" y1="202" x2="496" y2="202" stroke="#0047AB" stroke-width="1.75" opacity="0.4" marker-end="url(#flowArrowC)"/>
+
+    <g>
+      <rect x="504" y="62" width="216" height="280" rx="11" fill="#fff" stroke="#0047AB" stroke-opacity="0.2" stroke-width="1.25"/>
+      <rect x="504" y="62" width="216" height="32" rx="11" fill="#0047AB" fill-opacity="0.1"/>
+      <text x="612" y="83" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0f172a">&#x2462; &#xb2e4;&#xc218; &#xbcc0;&#xd638;&#xc0ac; &#xb2f5;&#xbcc0;</text>
+      <text x="612" y="108" text-anchor="middle" font-size="8.8" fill="#334155">&#xb4f1;&#xb85d;&#xb41c; &#xae00;&#xc5d0; &#xc5ec;&#xb7ec; &#xbcc0;&#xd638;&#xc0ac;&#xac00;</text>
+      <text x="612" y="122" text-anchor="middle" font-size="8.8" fill="#334155">&#xb313;&#xae00; &#xd615;&#xc2dd;&#xc73c;&#xb85c; &#xb2f5;&#xbcc0; &#xc81c;&#xacf5;</text>
+      <circle cx="612" cy="168" r="26" fill="#e0edfb" stroke="#0047AB" stroke-opacity="0.22"/>
+      <text x="612" y="175" text-anchor="middle" font-size="22">&#x2696;&#xfe0f;</text>
+    </g>
+    <line x1="728" y1="202" x2="736" y2="202" stroke="#0047AB" stroke-width="1.75" opacity="0.4" marker-end="url(#flowArrowC)"/>
+
+    <g>
+      <rect x="744" y="62" width="216" height="280" rx="11" fill="#fff" stroke="#0047AB" stroke-opacity="0.2" stroke-width="1.25"/>
+      <rect x="744" y="62" width="216" height="32" rx="11" fill="#0047AB" fill-opacity="0.1"/>
+      <text x="852" y="83" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0f172a">&#x2463; &#xbcc0;&#xd638;&#xc0ac; &#xc120;&#xd0dd;&#xb7fb; 1:1 &#xc694;&#xccad;</text>
+      <text x="852" y="108" text-anchor="middle" font-size="8.8" fill="#334155">&#xb9c8;&#xc74c;&#xc5d0; &#xb4dc;&#xb294; &#xbcc0;&#xd638;&#xc0ac; &#xc120;&#xd0dd;</text>
+      <text x="852" y="122" text-anchor="middle" font-size="8.8" fill="#334155">1:1 &#xb300;&#xd654; &#xc694;&#xccad;</text>
+      <circle cx="852" cy="168" r="26" fill="#e0edfb" stroke="#0047AB" stroke-opacity="0.22"/>
+      <text x="852" y="175" text-anchor="middle" font-size="22">&#x1f91d;</text>
+    </g>
+    <line x1="968" y1="202" x2="976" y2="202" stroke="#0047AB" stroke-width="1.75" opacity="0.4" marker-end="url(#flowArrowC)"/>
+
+    <g>
+      <rect x="984" y="62" width="216" height="280" rx="11" fill="#fff" stroke="#0047AB" stroke-opacity="0.2" stroke-width="1.25"/>
+      <rect x="984" y="62" width="216" height="32" rx="11" fill="#0047AB" fill-opacity="0.1"/>
+      <text x="1092" y="83" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0f172a">&#x2464; &#xc120;&#xc784;&#xb7fb; &#xd6c4;&#xae30;</text>
+      <text x="1092" y="108" text-anchor="middle" font-size="8.8" fill="#334155">1:1 &#xc2ec;&#xce35; &#xc0c1;&#xb2f4; &#xd6c4; &#xcd5c;&#xc885; &#xc120;&#xc784;</text>
+      <text x="1092" y="122" text-anchor="middle" font-size="8.8" fill="#334155">&#xbc0f; &#xbc95;&#xb960; &#xbb38;&#xc81c;&#xd574;&#xacb0;</text>
+      <circle cx="1092" cy="168" r="26" fill="#e0edfb" stroke="#0047AB" stroke-opacity="0.22"/>
+      <text x="1092" y="175" text-anchor="middle" font-size="22">&#x2b50;</text>
+    </g>
+  </g>
+</svg>
