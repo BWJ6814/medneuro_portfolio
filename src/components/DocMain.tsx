@@ -1,24 +1,18 @@
 import type { ReactNode } from 'react'
 import {
-  PermissionsArticle,
   RequirementsArticle,
+  UseCaseArticle,
   UserFlowArticle,
 } from '../content/analysisArticles'
-import { DbErdArticle, ScreenDesignArticle } from '../content/designArticles'
+import {
+  DbErdArticle,
+  ScreenDesign2dArticle,
+  ScreenDesignUploadArticle,
+} from '../content/designArticles'
 import { MainScreensArticle } from './doc/MainScreensArticle'
-import { CoreTechArticle } from '../content/implementationArticles'
-import {
-  FeedbackArticle,
-  MeetingNotesArticle,
-  RiskManagementArticle,
-} from '../content/managementArticles'
-import {
-  IntegrationTestsArticle,
-  UnitTestsArticle,
-} from '../content/testingArticles'
+import { RiskManagementArticle } from '../content/managementArticles'
 import {
   ArchitectureArticle,
-  NetworkDiagramArticle,
   ProjectBackgroundArticle,
   ProjectGoalsArticle,
   ScheduleArticle,
@@ -44,21 +38,16 @@ const SECTION_BODIES: Record<string, ReactNode> = {
   'project-background': <ProjectBackgroundArticle />,
   'project-goals': <ProjectGoalsArticle />,
   architecture: <ArchitectureArticle />,
-  'network-diagram': <NetworkDiagramArticle />,
   'team-roles': <TeamRolesArticle />,
   schedule: <ScheduleArticle />,
   'user-flow': <UserFlowArticle />,
-  permissions: <PermissionsArticle />,
+  'use-case': <UseCaseArticle />,
   requirements: <RequirementsArticle />,
-  'screen-design': <ScreenDesignArticle />,
+  'screen-design-upload': <ScreenDesignUploadArticle />,
+  'screen-design-2d': <ScreenDesign2dArticle />,
   'db-erd': <DbErdArticle />,
-  'core-tech': <CoreTechArticle />,
   'main-screens': <MainScreensArticle />,
-  'unit-tests': <UnitTestsArticle />,
-  'integration-tests': <IntegrationTestsArticle />,
-  'meeting-notes': <MeetingNotesArticle />,
   'risk-management': <RiskManagementArticle />,
-  feedback: <FeedbackArticle />,
 }
 
 export function DocMain() {
@@ -90,14 +79,14 @@ export function DocMain() {
                     >
                       <header className="mb-6">
                         <h2 className="flex flex-wrap items-baseline gap-x-2.5 gap-y-2 text-3xl font-bold tracking-tight sm:text-4xl">
-                          <span className="text-[#0047AB]">{cat.label}</span>
+                          <span className="text-slate-900">{cat.label}</span>
                           <span
                             className="shrink-0 font-light text-slate-300"
                             aria-hidden
                           >
                             |
                           </span>
-                          <span className="text-lg font-semibold tracking-tight text-slate-900 sm:text-xl">
+                          <span className="text-lg font-semibold tracking-tight text-slate-800 sm:text-xl">
                             {child.label}
                           </span>
                         </h2>
@@ -116,9 +105,9 @@ export function DocMain() {
                               교체해 주세요.
                             </p>
                             <p className="leading-relaxed">
-                              LawPartner는 법률 도메인에 특화된 서비스로,
-                              검색·권한·협업 흐름을 고려한 설계와 RAG 기반 응답
-                              품질 개선을 목표로 합니다.
+                              MedNeuro는 NIfTI 기반 뇌 영상 시각화에 특화된
+                              서비스로, 2D·3D 출력과 임상·연구 워크플로에 맞춘
+                              설계를 목표로 합니다.
                             </p>
                           </div>
                           <PlaceholderFigure

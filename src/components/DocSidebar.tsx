@@ -7,8 +7,6 @@ import {
   type NavCategory,
 } from '../data/navigation'
 
-const ACCENT = '#0047AB'
-
 /** 대분류 클릭 직후, 스크롤이 목표 소분류에 닿기 전까지만 스파이보다 우선 */
 type PendingNav = {
   categoryId: string
@@ -104,24 +102,24 @@ export function DocSidebar({
 
   const sidebarInner = (
     <>
-      <div className="relative flex h-[3.75rem] shrink-0 items-center border-b border-[#0047AB]/10 bg-gradient-to-r from-[#0047AB]/[0.12] to-[#0047AB]/[0.04] px-4 lg:h-[4.25rem] lg:px-5">
+      <div className="relative flex h-[3.75rem] shrink-0 items-center border-b border-white/10 bg-gradient-to-r from-white/[0.07] to-white/[0.02] px-4 lg:h-[4.25rem] lg:px-5">
         <div
-          className="pointer-events-none absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Ccircle%20cx%3D%222%22%20cy%3D%222%22%20r%3D%221%22%20fill%3D%22%230047AB%22%20fill-opacity%3D%220.06%22%2F%3E%3C%2Fsvg%3E')]"
+          className="pointer-events-none absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Ccircle%20cx%3D%222%22%20cy%3D%222%22%20r%3D%221%22%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.04%22%2F%3E%3C%2Fsvg%3E')]"
           aria-hidden
         />
         <a
           href="#intro"
-          className="relative text-lg font-semibold tracking-tight text-[#0047AB] drop-shadow-sm"
+          className="relative text-lg font-semibold tracking-tight text-neutral-100 drop-shadow-sm"
           onClick={(e) => {
             e.preventDefault()
             goIntro()
           }}
         >
-          LawPartner
+          MedNeuro
         </a>
         <button
           type="button"
-          className="relative ml-auto rounded-lg p-2 text-slate-600 transition-colors hover:bg-white/50 lg:hidden"
+          className="relative ml-auto rounded-lg p-2 text-neutral-400 transition-colors hover:bg-white/10 hover:text-neutral-100 lg:hidden"
           onClick={onCloseMobile}
           aria-label="메뉴 닫기"
         >
@@ -142,18 +140,18 @@ export function DocSidebar({
                   onClick={() => onCategoryClick(cat)}
                   className={`flex w-full items-center gap-1.5 rounded-lg px-2.5 py-2.5 text-left text-[15px] leading-snug transition-colors ${
                     isOpen
-                      ? 'bg-white/70 text-[#003d96] shadow-sm ring-1 ring-[#0047AB]/15'
-                      : 'text-slate-800 hover:bg-white/45 hover:text-slate-900'
+                      ? 'bg-white/10 text-neutral-100 shadow-sm ring-1 ring-white/15'
+                      : 'text-neutral-300 hover:bg-white/[0.06] hover:text-neutral-100'
                   }`}
                 >
                   {isOpen ? (
                     <ChevronDown
-                      className="h-4 w-4 shrink-0 text-[#0047AB]/70"
+                      className="h-4 w-4 shrink-0 text-neutral-400"
                       strokeWidth={2}
                     />
                   ) : (
                     <ChevronRight
-                      className="h-4 w-4 shrink-0 text-slate-400"
+                      className="h-4 w-4 shrink-0 text-neutral-500"
                       strokeWidth={2}
                     />
                   )}
@@ -162,7 +160,7 @@ export function DocSidebar({
                   </span>
                 </button>
                 {isOpen ? (
-                  <ul className="ml-1 mt-1 space-y-0.5 border-l-2 border-[#0047AB]/20 py-1 pl-3">
+                  <ul className="ml-1 mt-1 space-y-0.5 border-l-2 border-white/15 py-1 pl-3">
                     {cat.children.map((child) => {
                       const isPendingHighlight =
                         effectivePending?.categoryId === cat.id &&
@@ -176,14 +174,9 @@ export function DocSidebar({
                             onClick={() => onChildClick(child.id)}
                             className={`w-full rounded-md px-2.5 py-1.5 text-left text-sm transition-all ${
                               isActive
-                                ? 'font-medium text-white shadow-sm ring-1 ring-[#0047AB]/30'
-                                : 'text-slate-600 hover:bg-[#0047AB]/[0.07] hover:text-slate-900'
+                                ? 'bg-neutral-100 font-medium text-neutral-950 shadow-sm ring-1 ring-white/20'
+                                : 'text-neutral-400 hover:bg-white/[0.06] hover:text-neutral-100'
                             }`}
-                            style={
-                              isActive
-                                ? { backgroundColor: ACCENT }
-                                : undefined
-                            }
                           >
                             {child.label}
                           </button>
@@ -203,14 +196,14 @@ export function DocSidebar({
   return (
     <>
       <div
-        className={`fixed inset-0 z-40 bg-slate-900/45 backdrop-blur-[2px] transition-opacity lg:hidden ${
+        className={`fixed inset-0 z-40 bg-black/60 backdrop-blur-[2px] transition-opacity lg:hidden ${
           mobileOpen ? 'opacity-100' : 'pointer-events-none opacity-0'
         }`}
         aria-hidden={!mobileOpen}
         onClick={onCloseMobile}
       />
       <aside
-        className={`fixed bottom-0 left-0 top-0 z-50 flex w-[min(88vw,300px)] flex-col border-r border-[#0047AB]/10 bg-gradient-to-b from-[#e8eef7] via-[#eef2f9] to-[#e4eaf4] shadow-[4px_0_24px_-8px_rgba(0,71,171,0.12)] transition-transform duration-200 ease-out lg:w-1/5 lg:max-w-none lg:translate-x-0 ${
+        className={`fixed bottom-0 left-0 top-0 z-50 flex w-[min(88vw,300px)] flex-col border-r border-white/10 bg-gradient-to-b from-[#08090b] via-[#0a0b0d] to-[#0c0d10] shadow-[4px_0_24px_-8px_rgba(0,0,0,0.45)] transition-transform duration-200 ease-out lg:w-1/5 lg:max-w-none lg:translate-x-0 ${
           mobileOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
         }`}
       >

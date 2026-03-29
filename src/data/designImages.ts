@@ -1,10 +1,11 @@
-/** `public/images/design/` — 발표자료에서 복사한 PNG 파일명과 일치 */
+/** `public/images/발표자료이미지/` */
 function publicImage(path: string): string {
   const base = import.meta.env.BASE_URL.replace(/\/$/, '')
   return `${base}${path}`
 }
 
 export const DESIGN_IMAGES = {
-  screenAiChat: publicImage('/images/design/screen-design-ai-chat.png'),
-  screenLegalBoard: publicImage('/images/design/screen-design-legal-board.png'),
+  screenUpload: publicImage('/images/발표자료이미지/화면설계서.png'),
+  screen2d: publicImage('/images/발표자료이미지/화면설계서-2d.png'),
+  erd: publicImage('/images/발표자료이미지/ERD.png'),
 } as const

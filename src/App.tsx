@@ -12,13 +12,13 @@ function App() {
   const openMobile = useCallback(() => setMobileMenuOpen(true), [])
 
   return (
-    <div className="min-h-svh bg-[#f4f6fa] text-slate-800 antialiased">
+    <div className="min-h-svh bg-[#0a0b0d] text-neutral-200 antialiased">
       <DocSidebar
         activeId={activeId}
         mobileOpen={mobileMenuOpen}
         onCloseMobile={closeMobile}
       />
-      <div className="bg-gradient-to-br from-white via-[#fafbfd] to-[#f4f7fc] lg:ml-[20%]">
+      <div className="min-h-svh bg-white text-slate-900 lg:ml-[20%]">
         <DocHeader
           activeId={activeId}
           showMenuButton

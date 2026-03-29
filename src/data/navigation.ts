@@ -14,7 +14,6 @@ export const NAV_CATEGORIES: NavCategory[] = [
       { id: 'project-background', label: '프로젝트 배경' },
       { id: 'project-goals', label: '프로젝트 목표' },
       { id: 'architecture', label: '시스템 아키텍쳐' },
-      { id: 'network-diagram', label: '네트워크 구조도' },
       { id: 'team-roles', label: '팀원 역할 분배' },
       { id: 'schedule', label: '프로젝트 스케쥴' },
     ],
@@ -23,8 +22,8 @@ export const NAV_CATEGORIES: NavCategory[] = [
     id: 'analysis',
     label: '분석',
     children: [
-      { id: 'user-flow', label: '역할별 서비스 이용 흐름' },
-      { id: 'permissions', label: '권한별 기능 정리' },
+      { id: 'user-flow', label: '서비스 이용 흐름' },
+      { id: 'use-case', label: '유스케이스' },
       { id: 'requirements', label: '요구사항 정의서' },
     ],
   },
@@ -32,34 +31,20 @@ export const NAV_CATEGORIES: NavCategory[] = [
     id: 'design',
     label: '설계',
     children: [
-      { id: 'screen-design', label: '화면 설계서' },
+      { id: 'screen-design-upload', label: '화면 설계서 (업로드)' },
+      { id: 'screen-design-2d', label: '화면 설계서 (2D 분석)' },
       { id: 'db-erd', label: 'DB-ERD 설계서' },
     ],
   },
   {
     id: 'implementation',
     label: '주요화면 구현',
-    children: [
-      { id: 'core-tech', label: '핵심 기술 소개' },
-      { id: 'main-screens', label: '주요화면 구현' },
-    ],
-  },
-  {
-    id: 'testing',
-    label: '테스트',
-    children: [
-      { id: 'unit-tests', label: '단위 테스트' },
-      { id: 'integration-tests', label: '통합 테스트' },
-    ],
+    children: [{ id: 'main-screens', label: '주요화면 구현' }],
   },
   {
     id: 'management',
     label: '관리',
-    children: [
-      { id: 'meeting-notes', label: '회의록' },
-      { id: 'risk-management', label: '리스크 관리' },
-      { id: 'feedback', label: '피드백 수정사항' },
-    ],
+    children: [{ id: 'risk-management', label: '리스크 관리' }],
   },
 ]
 
