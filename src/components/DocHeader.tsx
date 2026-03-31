@@ -1,7 +1,7 @@
 import { BookOpen } from 'lucide-react'
 import { findNavLabels } from '../data/navigation'
 
-const GITHUB_URL = 'https://github.com/MadSadly/4project'
+const GITHUB_URL = 'https://github.com/BWJ6814/Medneuro_bwj'
 
 function GitHubIcon({ className }: { className?: string }) {
   return (
