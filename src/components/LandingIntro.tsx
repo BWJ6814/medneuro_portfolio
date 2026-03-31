@@ -151,7 +151,7 @@ export function LandingIntro() {
                     IDE / Editor
                   </td>
                   <td className="px-2 py-1.5 text-slate-700 sm:px-2.5">
-                    Cursor, IntelliJ IDEA, Eclipse
+                    IntelliJ IDEA, VSCode
                   </td>
                 </tr>
                 <tr className="border-b border-slate-100">
