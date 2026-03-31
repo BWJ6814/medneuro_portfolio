@@ -98,7 +98,7 @@ export function DocHeader({
           rel="noopener noreferrer"
           className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-800 shadow-sm transition-colors hover:border-slate-300 hover:bg-slate-50"
           aria-label="GitHub — MedNeuro 저장소(4project)"
-          title="github.com/MadSadly/4project"
+          title="github.com/BWJ6814/Medneuro_bwj"
         >
           <GitHubIcon className="h-5 w-5" />
         </a>
